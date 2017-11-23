@@ -1,112 +1,79 @@
-<style type="text/css">
-    input[type="text"].form-control, input[type="email"].form-control, textarea.form-control { border-radius: 0; border: 1px solid #444142; }
-    input[type="email"].form-control.email { width: 100% !important; }
-    button[type="submit"] { border-radius: 0; background: transparent; color: #444142; border: 1px solid #444142; }
-    button[type="submit"]:hover { background: #444142; color: #ffffff; border: 1px solid #444142; }
+<div id="viewpoint-footer"></div>
+<div class="hidden-xs" id="contato" style="background: url('<?= RAIZSITE ?>/imagens/banner-rodape.jpg'); background-size: cover; background-position: center bottom; background-attachment: fixed; height: 350px;"></div>
+<footer class="letter-spacing1">
+	<div class="bg-azul">
+		<div class="container conteudo-rodape">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h3 class="Roboto Regular branco-fonte Uppercase size30">Fale com<br>a gente</h3>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dados-contato">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding-zero size13 branco-fonte">
+					<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 padding-zero">
+						<p class="Roboto Regular Uppercase">Tel.: <a class="link-default branco-fonte" href="tel:3081 0979">(41) <span class="size18">3081-0979</span></a></p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 padding-zero">
+						<a href="https://www.facebook.com/TSA-Consultoria-Engenharia-1010772618990625/" target="_blank"><img src="<?= RAIZSITE ?>/imagens/facebook-white.png" class="facebook-icon"></a>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 hidden-sm hidden-xs padding-zero">&nbsp;</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding-zero branco-fonte size13 bloco-endereco">
+					<p class="Roboto Medium Uppercase margin-zero">São Mateus do Sul/PR</p>
+					<p class="Roboto margin-zero">PR 151 KM 453</p>
+					<p class="Roboto margin-zero">Colônia Taquaral</p>
+					<p class="Roboto margin-zero">CEP: 83.900-000</p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding-zero branco-fonte size13 bloco-endereco">
+					<p class="Roboto Medium Uppercase margin-zero">São José dos Pinhais/PR</p>
+					<p class="Roboto margin-zero">Rua Norberto de Brito, 2181</p>
+					<p class="Roboto margin-zero">Centro • CEP: 83.005-290</p>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
+					<div class="google-maps">
+					    <iframe id="iframeMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.1273022933374!2d-49.196789558110126!3d-25.534136136277922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcf0afaf40b28f%3A0x7cf03286f865673c!2sR.+Norberto+de+Brito%2C+2181+-+Centro%2C+S%C3%A3o+Jos%C3%A9+dos+Pinhais+-+PR%2C+83005-290!5e0!3m2!1spt-BR!2sbr!4v1497739162074"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-1 col-md-1 hidden-sm hidden-xs">&nbsp;</div>
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+				<form class="form-horizontal Roboto branco-fonte size13" method="post" id="formulario" action="<?= RAIZSITE ?>/enviar">
+					<p class="Medium Uppercase">Nome *</p>
+					<input type="text" class="form-control" name="nome" required><br />
 
-    .bg-cinza-alternativo { background: #d9d9d9 }
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding-zero">
+						<p class="Medium Uppercase">E-mail *</p>
+						<input type="email" class="form-control" name="email" required><br />
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding-zero">
+						<p class="Medium Uppercase">Telefone *</p>
+						<input type="text" class="form-control" name="telefone" maxlength="16" id="telefone" onkeyup="javascript:Trim();" onKeyPress="MascaraCelular(formulario.telefone);" onBlur="ValidaCelular(formulario.telefone);" required><br />
+					</div>
+					<p class="Medium Uppercase">Assunto *</p>
+					<input type="text" class="form-control" name="assunto" required><br />
 
-    @media screen and (min-width: 768px) {
-        footer .bloco-logo { margin-top: 42px }
-        footer .bloco-links { margin-top: 50px }
-        footer .bloco-formulario { margin-top: 46px }
-        footer .bloco-mapa { margin-top: 50px; margin-bottom: 45px }
-        footer .bloco-logo .conteudo { position: absolute; top: 50%; -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); }
-    }
-    @media screen and (min-width: 991px) {
-        input[type="email"].form-control { width: 95% }
-    }
+					<p class="Medium Uppercase">Mensagem *</p>
+					<textarea class="form-control" cols="3" rows="8" name="mensagem" required></textarea>
 
-    @media screen and (max-width: 767px) {
-        footer .bloco-logo { margin-top: 40px; margin-bottom: 40px }
-        footer .bloco-links { margin-bottom: 40px }
-        footer .bloco-formulario { margin-bottom: 40px }
-        footer .bloco-mapa { margin-bottom: 40px }
-        footer .bloco-mapa iframe { width: 100%; }
-
-        .mobile-zero { padding: 0; }
-    }
-</style>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<footer>
-    <?php if($pagina_atual != "contato") { ?>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-cinza-footer">
-        <div class="container Relative padding-mobile">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 bloco-logo mobile-zero">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero MarginT3p">
-                    <h4 class="size16" style="margin-top: 0px;">ACOMPANHE A HARPYJA</h4>
-                    <hr class="hrTitleFull hrPadrao">
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
-                    <h6 class="MarginT2p MarginB4p">Fique por dentro de novas avaliações e dicas</h6>
-                    
-                    <form action="" class="form-horizontal">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding-zero">
-                        <input type="email" class="form-control email" name="email" placeholder="Digite seu e-mail*"><br>
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding-zero">
-                        <button type="submit" class="btn btn-default btn-assinar">Assinar</button>
-                      </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 bloco-formulario mobile-zero">
-               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-menu-footer">
-                   <div class="text-center size18">
-                       <h5><a href="<?= RAIZSITE ?>" class="link-default preto-fonte">Home</a></h5>
-                       <hr class="hrTitleFull hrPadrao">
-                       <h5><a href="<?= RAIZSITE ?>/avaliacoes" class="link-default preto-fonte">Avaliações</a></h5>
-                       <hr class="hrTitleFull hrPadrao">
-                       <h5><a href="<?= RAIZSITE ?>/sobre" class="link-default preto-fonte">Sobre</a></h5>
-                       <hr class="hrTitleFull hrPadrao">
-                       <h5><a href="<?= RAIZSITE ?>/contato" class="link-default preto-fonte">Contato</a></h5>
-                   </div>
-                </div>
-            </div>       
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 bloco-mapa mobile-zero">
-                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="135" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook"></a></blockquote></div>
-            </div>
-        </div>
-    </div>
-    <?php } ?>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-cinza-alternativo">
-        <div class="container">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
-                <h6><a href="http://www.comberweb.com.br" class="link-default preto-fonte" target="_blank">COMBERWEB.COM.BR</a></h6>
-            </div>
-        </div>
-    </div>
+					<button type="submit" class="btn btn-submit Medium Uppercase pull-right">Enviar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="bg-azul-marinho">
+		<div class="container conteudo-copyright">
+			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 Roboto branco-fonte">
+				<p class="size14">© 2017 TSA • Todos os direitos reservados</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">&nbsp;</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 Roboto branco-fonte">
+				<p class="size13"><a class="link-default branco-fonte" href="http://www.pepperscriacao.com" target="_blank">pepperscriacao<span class="azul-marinho-fonte">.com</span></a></p>
+			</div>
+		</div>
+	</div>
 </footer>
 </body>
 </html>
 
 <script type="text/javascript">
-	$(document).ready(function() {
-        
-    });
-
-	function Trim() {
-		var get_value = document.getElementById('telefone');
-		var campo_temp;
-		campo_temp = get_value.value.substring(5,6);
-
-		if(campo_temp == "9" || campo_temp == "8") {
-			/* console.log("mascara mobile"); */
-			$("#telefone").attr("onKeyPress", "MascaraCelular(formulario.telefone);");
-			$("#telefone").attr("onBlur", "ValidaCelular(formulario.telefone);");
-			$("#telefone").attr("maxlength", "16");
-		} else {
-			/* console.log("mascara telefone"); */
-			$("#telefone").attr("onKeyPress", "MascaraTelefone(formulario.telefone);");
-			$("#telefone").attr("onBlur", "ValidaTelefone(formulario.telefone);");
-			$("#telefone").attr("maxlength", "14");
-		}
-	}
 </script>

@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-.Montserrat {font-family: 'Montserrat', sans-serif;}
-.Festival { font-family: festival, sans-serif; }
-.Rye { font-family: rye, sans-serif; }
-.Teko-Light { font-family: tekoLight, sans-serif; }
-.Teko-Regular { font-family: tekoRegular, sans-serif; }
-.Teko-Medium { font-family: tekoMedium, sans-serif; }
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
 .Roboto { font-family: 'Roboto', sans-serif; }
+.Source { font-family: 'Source Sans Pro', sans-serif; }
 .Thin { font-weight: 100; }
 .Light { font-weight: 300; }
 .Regular { font-weight: 400; }
@@ -56,18 +51,13 @@
 .size48 { font-size: 48px; }
 .size49 { font-size: 49px; }
 .size50 { font-size: 50px; }
-.size55 { font-size: 55px; }
 .size60 { font-size: 60px; }
-.size80 { font-size: 80px; }
 .margin-zero { margin: 0; }
-.margin-bot-zero { margin-bottom: 0!important; }
 .padding-zero { padding: 0; }
 .justify { text-align: justify; }
 .Uppercase { text-transform: uppercase; }
 .Lowercase { text-transform: lowercase; }
 .link-default { text-decoration: none; }
-.line-height10 { line-height: 10px; }
-.line-height11 { line-height: 11px; }
 .line-height12 { line-height: 12px; }
 .line-height13 { line-height: 13px; }
 .line-height14 { line-height: 14px; }

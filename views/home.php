@@ -1,219 +1,126 @@
-<?php
-    $videos = Videos::sql("SELECT * FROM videos ORDER BY id DESC");
-    $config = Configurar::sql("SELECT * FROM configurar", SimpleOrm::FETCH_ONE);
-    $banners = BannersHome::sql("SELECT * FROM banners_home");
-?>
-
-<style type="text/css">
-    @media screen and (min-width: 768px) {
-        #my-slider { margin-top: 137px }
-    }
-    @media screen and (max-width: 767px) {
-        #my-slider { margin-top: 70px }
-    }
-
-    .bloco-galeria .conteudo { margin-top: 50px;}
-    .bloco-galeria .conteudo .titulo { margin-bottom: 25px }
-    .bloco-titulo .conteudo { margin-top: 50px; margin-bottom: 25px }
-    .bloco-sobre .conteudo { padding-top: 65px; padding-bottom: 50px }
-    .bloco-sobre .conteudo p { font-size: 16px; text-align: justify }
-    .parallax-img {background-image: url(<?= RAIZSITE ?>/cms/uploads/<?= $config->parallax ?>);}
-    .parallax-default { background-size: cover; height: 300px; background-attachment: fixed; background-position: center left;}
-</style>
-<div class="owl-carousel margem-header-home" id="owl">
-    <?php 
-        foreach ($banners as $banner) { ?>
-            <div class="">
-                <img class="" src="<?= RAIZSITE ?>/cms/uploads/<?= $banner->imagem ?>" style="height: 550px;">
+<div class="fluid Relative">
+	<div class="owl-carousel owl-theme" id="banners">
+		<div class="item">
+		    <div style="background: url('<?= RAIZSITE ?>/imagens/SLIDE.jpg'); background-size: cover; background-position: center center; height: 50vh; width: 100%">
+		    	<div class="container">
+    
+		    	</div>
+		    </div>
+	    </div>
+	    <div class="item">
+		    <div style="background: url('<?= RAIZSITE ?>/imagens/SLIDE.jpg'); background-size: cover; background-position: center center; height: 50vh; width: 100%">
+		    	<div class="container">
+		    	</div>
+		    </div>
+	    </div>
+	</div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 PaddingT10p PaddingB10p bg-aqua branco-fonte">
+    <div class="container Relative">    
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 padding-zero Absolute" style="top: -98px; z-index: 1; right: 32px;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero pointer-a"><h4 class="size30 Light margin-zero text-center">CONSULTORIA</h4></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero pointer-b"><h4 class="size30 Light margin-zero text-center">ASSESSORIA</h4></div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero MarginT3p">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding-zero">
+                <h4 class="size25 Light"><div class="bullet"></div>Nosso Objetivo</h4>
             </div>
-        <?php }
-    ?>
-</div>
-
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bloco-titulo padding-zero">
-    <div class="container conteudo padding-mobile">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1>
-                <?= $config->titulo ?>
-                <hr class="hrTitle hrPadrao hidden-sm hidden-xs">
-            </h1>
-            <h2>
-                <?= $config->subtitulo ?>
-            </h2>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 padding-zero">
+                <p class="Light">
+                    É desenvolver um trabalho personalizado que consiste em, analisar individualmente 
+                    cada caso, detectar possíveis problemas, e apontar soluções eficientes, que 
+                    garantam a total regularidade das obrigações fiscais de nossos clientes.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
+            <hr class="hr-azul MarginB4p">
+            <div class="owl-carousel owl-theme MarginT1p MarginB1p" id="servicos">
+                <div class="geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
+                    
+                </div>
+                <div class="geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
+                    
+                </div>
+                <div class="geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
+                    
+                </div>
+                <div class="geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
+                    
+                </div>
+                <div class="geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
+                    
+                </div>
+                <div class="geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
+                    
+                </div>
+                <div class="geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
+                    
+                </div>
+                <div class="geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
+                    
+                </div>
+                <div class="geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
+                    
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 parallax" style="background-image: url('<?= RAIZSITE ?>/imagens/parallax.jpg'); height: 300px;">
     <div class="container">
-        <div class="" style="margin-top: 5px;">
-            <div class="slider-pro sp-vertical" id="my-slider2">
-                <div class="sp-slides">
-                    <div class="sp-slide Relative">
-                        <img class="sp-image" src="<?= RAIZSITE ?>/imagens/teste.jpg"/>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 padding-zero Absolute text-center branco-fonte bg-nota position-nota">
-                            <h3 style="margin: 10px;">9</h3>
-                        </div>
-                        <a href="" class="title-noticia" target="_self">
-                            <h5 class="text-noticia">
-                                <b>Dolor sit amet, consectetur adipiscing Dolor sit amet, consectetur adipiscing Dolor sit amet, consectetur adipiscing</b>
-                            </h5>
-                        </a>
-                        <div class="sp-thumbnail">
-                            <div class="sp-thumbnail-image-container Relative" style="background-image: url(<?= RAIZSITE ?>/imagens/teste.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
-                                <div class="col-lg-3 col-md-3 col-sm-1 col-xs-2 padding-zero Absolute text-center branco-fonte bg-nota position-nota">
-                                    <h5 style="margin: 10px;">9</h5>
-                                </div>
-                            </div>
-                            <div class="sp-thumbnail-text">
-                                <div class="sp-thumbnail-title">Lorem ipsum</div>
-                                <div class="sp-thumbnail-description">Dolor sit amet, consectetur adipiscing Dolor sit amet, consectetur adipiscing Dolor sit amet, consectetur adipiscing</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sp-slide">
-                        <img class="sp-image" src="<?= RAIZSITE ?>/imagens/teste.jpg"/>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 padding-zero Absolute text-center branco-fonte bg-nota position-nota">
-                            <h3 style="margin: 10px;">9</h3>
-                        </div>
-                        <a href="" class="title-noticia" target="_self">
-                            <h5 class="text-noticia">
-                                <b>Dolor sit amet, consectetur adipiscing Dolor sit amet, consectetur adipiscing Dolor sit amet, consectetur adipiscing</b>
-                            </h5>
-                        </a>
-                        <div class="sp-thumbnail">
-                            <div class="sp-thumbnail-image-container Relative" style="background-image: url(<?= RAIZSITE ?>/imagens/teste.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
-                                <div class="col-lg-3 col-md-3 col-sm-1 col-xs-2 padding-zero Absolute text-center branco-fonte bg-nota position-nota">
-                                    <h5 style="margin: 10px;">9</h5>
-                                </div>
-                            </div>
-                            <div class="sp-thumbnail-text">
-                                <div class="sp-thumbnail-title">Lorem ipsum</div>
-                                <div class="sp-thumbnail-description">Dolor sit amet, consectetur adipiscing Dolor sit amet, consectetur adipiscing Dolor sit amet, consectetur adipiscing</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sp-slide">
-                        <img class="sp-image" src="<?= RAIZSITE ?>/imagens/teste.jpg"/>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 padding-zero Absolute text-center branco-fonte bg-nota position-nota">
-                            <h3 style="margin: 10px;">9</h3>
-                        </div>
-                        <a href="" class="title-noticia" target="_self">
-                            <h5 class="text-noticia">
-                                <b>Dolor sit amet, consectetur adipiscing Dolor sit amet, consectetur adipiscing Dolor sit amet, consectetur adipiscing</b>
-                            </h5>
-                        </a>
-                        <div class="sp-thumbnail">
-                            <div class="sp-thumbnail-image-container Relative" style="background-image: url(<?= RAIZSITE ?>/imagens/teste.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
-                                <div class="col-lg-3 col-md-3 col-sm-1 col-xs-2 padding-zero Absolute text-center branco-fonte bg-nota position-nota">
-                                    <h5 style="margin: 10px;">9</h5>
-                                </div>
-                            </div>
-                            <div class="sp-thumbnail-text">
-                                <div class="sp-thumbnail-title">Lorem ipsum</div>
-                                <div class="sp-thumbnail-description">Dolor sit amet, consectetur adipiscing Dolor sit amet, consectetur adipiscing Dolor sit amet, consectetur adipiscing</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>    
+        
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 PaddingT10p PaddingB10p bg-aqua branco-fonte">
+    <div class="container">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding-zero">
+            <h4 class="size25 Light" ><div class="bullet"></div>Informativos</h4>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
+            <hr class="hr-azul">
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero MarginB7p">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-zero MarginT3p">
+                <h4 class="margin-zero MarginT1p azul-fonte">13 Nov 2013</h4>
+                <h4 class="margin-zero MarginT1p">Orçamento aprova destinação de R$ 2,5 bilhões para o Fies</h4>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-zero MarginT3p">
+                <h4 class="margin-zero MarginT1p azul-fonte">13 Nov 2013</h4>
+                <h4 class="margin-zero MarginT1p">Comissão aprova reestimativa de receita para o Orçamento de 2014</h4>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-zero MarginT3p">
+                <h4 class="margin-zero MarginT1p azul-fonte">13 Nov 2013</h4>
+                <h4 class="margin-zero MarginT1p">Aprovação do piso salarial dos agentes de saúde preocupa Dilma, diz líder do PSC</h4>
+            </div>
         </div>
     </div>
 </div>
-
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-cinza-claro bloco-sobre MarginT10p">
-    <div class="container conteudo padding-mobile PaddingT5p PaddingB5p">
-        <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs">&nbsp;</div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 padding-mobile">
-            <img class="img-responsive img-circle" src="<?= RAIZSITE ?>/cms/uploads/<?= $config->img_autor ?>" style="margin: 0 auto; max-height: 300px;"><br>
-        </div>
-        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 padding-mobile">
-            <h3 class="margin-zero"><?= $config->titulo_autor ?></h3><br>
-            <?= $config->texto_autor ?>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs">&nbsp;</div>
-    </div>
-</div>
-
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bloco-galeria">
-    <div class="container conteudo padding-mobile">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-mobile">
-            <h4 class="size18 margin-zero">GALERIA DE VÍDEOS</h4>
-            <hr class="hrTitleSobre hrPadrao MarginB5p">
-        </div>
-    </div>
-    <div class="container galeria-videos padding-mobile MarginB10p">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-mobile">
-        <?php
-            foreach ($videos as $video) {
-                ?>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 video">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 video-container">
-                        <iframe src="<?= $video->link_video ?>" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <?php
-            }
-        ?>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-cinza-claro parallax-img parallax-default">
-    <div class="container"></div>
-</div>
-
 <script type="text/javascript">
-        $(document).ready(function(){
-            $('.owl-carousel').owlCarousel({
-                loop:true,
-                margin:10,
-                nav:false,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:1
-                    },
-                    1000:{
-                        items:1
-                    }
-                }
-            })
-        });
-        $( '#my-slider2' ).sliderPro({
-              width: 620,
-              height: 400,
-              orientation: 'horizontal',
-              loop: false,
-              arrows: true,
-              buttons: false,
-              thumbnailsPosition: 'right',
-              thumbnailPointer: true,
-              thumbnailWidth: 500,
-              thumbnailHeight: 100,
-              autoplay: false,
-              breakpoints: {
-                1200:{
-                    width: 600,
-                    thumbnailWidth: 400,
-                },
-                1150:{
-                    width: 520,
-                    thumbnailWidth: 400,
-                },
-				1000: {
-					thumbnailsPosition: 'bottom',
-                    width: '100%',
-					thumbnailWidth: 0,
-					thumbnailHeight: 0
-				},
-				500: {
-					thumbnailsPosition: 'bottom',
-					thumbnailWidth: 0,
-					thumbnailHeight: 0
-				}
-			}
-          });
+    $(document).ready(function() {
+        $('#banners').owlCarousel({
+    	    loop: true,
+    	    dots: false,
+    	    items: 1,
+    	    autoplay: true
+    	});
+        $('#servicos').owlCarousel({
+	       /* loop: true, */
+	       margin: 20,
+	       nav: false,
+	       dots: true,
+	       autoplay: true,
+	       responsive:{
+	           0:{
+	               items:1
+	           },
+	           768:{
+	               items:3
+	           },
+	           992:{
+	               items:3
+	           }
+	       }
+	   });
+    });
 </script>
