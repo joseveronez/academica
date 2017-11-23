@@ -17,7 +17,7 @@
 </div>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 PaddingT10p PaddingB10p bg-aqua branco-fonte">
     <div class="container Relative">    
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 padding-zero Absolute" style="top: -98px; z-index: 1; right: 32px;">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 padding-zero Absolute" style="top: -99px; z-index: 1; right: 32px;">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero pointer-a"><h4 class="size30 Light margin-zero text-center">CONSULTORIA</h4></div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero pointer-b"><h4 class="size30 Light margin-zero text-center">ASSESSORIA</h4></div>
         </div>

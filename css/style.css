@@ -6,7 +6,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+    .navbar-nav>li>a {
+        padding-top: 45px;
+        padding-bottom: 0px;
+    }
 }
 
 /* Medium Devices, Desktops */
