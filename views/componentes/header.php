@@ -16,13 +16,19 @@
 		<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
 			<div id="navbar" class="navbar-collapse collapse navbar-right">
 				<ul class="nav navbar-nav">
-					<li><a class="Uppercase Roboto regular atalho" href="#consultoria">Consultoria</a></li>
-					<li><a class="Uppercase Roboto regular atalho" href="#servicos">Serviços</a></li>
-					<li><a class="Uppercase Roboto regular atalho-obras" href="#obras">Obras</a></li>
-					<li><a class="Uppercase Roboto regular atalho" href="#direcao">Direção</a></li>
-					<li><a class="Uppercase Roboto regular atalho" href="#clientes">Clientes</a></li>
-					<li><a class="Uppercase Roboto regular atalho" href="#contato">Contato</a></li>
-					<li><a class="Uppercase Roboto regular atalho" href="#noticias">Notícias</a></li>
+					<li><a class="Uppercase item-header azul-fonte size18" href="#">INICIAL</a></li>
+					<li><a class="Uppercase item-header azul-fonte size18" href="#">EMPRESA</a></li>
+					<li><a class="Uppercase item-header azul-fonte size18" href="#">SERVIÇOS</a></li>
+					<li class="dropdown">
+                        <a class="Uppercase item-header azul-fonte size18 dropdown-toggle" data-toggle="dropdown" href="#">TREINAMENTOS</a>
+                        <ul class="dropdown-menu menu-treinamentos">
+                            <li><a href="#" class="azul-fonte">PRESENCIAL</a></li>
+                            <li><a href="#" class="azul-fonte">ONLINE</a></li>
+                        </ul>
+                    </li>
+					<li><a class="Uppercase item-header azul-fonte size18" href="#">CLIENTES</a></li>
+					<li><a class="Uppercase item-header azul-fonte size18" href="#">LINKS</a></li>
+					<li><a class="Uppercase item-header azul-fonte size18" href="#">CONTATO</a></li>
 				</ul>
 			</div>
 		</div>

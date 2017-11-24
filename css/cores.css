@@ -1,8 +1,8 @@
-.bg-azul { background: #38a2a8; }
+.bg-azul { background: #012642; }
 .bg-azul-marinho { background: #14666b; }
-.bg-cinza { background: #e2e2e2; }
+.bg-cinza { background: #545454; }
 .bg-cinza-claro { background: #ededed; }
-.bg-cinza-escuro { background: #c7c7c7; }
+.bg-cinza-escuro { background: #343434; }
 .azul-fonte { color: #012642 !important; }
 .azul-fonte-numero { color: #38a2a8 !important }
 .azul-escuro-fonte { color: #19989d !important; }
@@ -13,3 +13,6 @@
 .chumbo-fonte { color: #373737 !important; }
 .bg-aqua{ background: #57a97d !important; }
 .bg-aqua-alt{ background: #69c695 !important; }
+.aqua-fonte {color: #57a97d !important; }
+.cinza-fonte {color: #a9a9a9 !important; }
+.cinza-fonte-alt {color: #545454 !important; }
