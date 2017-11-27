@@ -8,6 +8,7 @@
         private static $_routes = array(
             ''=>array('layout'=>'default','view'=>'home'),
             'empresa'=>array('layout'=>'default','view'=>'empresa'),
+            'servicos'=>array('layout'=>'default','view'=>'servicos'),
             
             
         ); //array com todas as rotas disponiveis

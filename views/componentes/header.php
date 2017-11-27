@@ -16,9 +16,9 @@
 		<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
 			<div id="navbar" class="navbar-collapse collapse navbar-right">
 				<ul class="nav navbar-nav">
-					<li><a class="Uppercase item-header azul-fonte size18" href="#">INICIAL</a></li>
-					<li><a class="Uppercase item-header azul-fonte size18" href="#">EMPRESA</a></li>
-					<li><a class="Uppercase item-header azul-fonte size18" href="#">SERVIÇOS</a></li>
+					<li><a class="Uppercase item-header azul-fonte size18" href="<?= RAIZSITE ?>">INICIAL</a></li>
+					<li><a class="Uppercase item-header azul-fonte size18" href="<?= RAIZSITE ?>/empresa">EMPRESA</a></li>
+					<li><a class="Uppercase item-header azul-fonte size18" href="<?= RAIZSITE ?>/servicos">SERVIÇOS</a></li>
 					<li class="dropdown">
                         <a class="Uppercase item-header azul-fonte size18 dropdown-toggle" data-toggle="dropdown" href="#">TREINAMENTOS</a>
                         <ul class="dropdown-menu menu-treinamentos">
