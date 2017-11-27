@@ -28,6 +28,12 @@
     .menu-treinamentos>li>a:hover{
         background-color: #e7e7e7!important;
     }
+    .img-logo{height: 80px!important;}
+    
+    #navbar-height{ height: 110px; }
+    .margin-header{ margin-top: 220px!important; }
+    
+    #formulario input[type="email"].form-control { width: 95%;}
 }
 
 /* Medium Devices, Desktops */
@@ -49,7 +55,12 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
-
+    #navbar-height{height: 50px;}
+    .navbar-brand{padding: 0px;}
+    .img-logo{height: 50px!important;}
+    .centraliza-xs{text-align: center!important;}
+    .margin-header{ margin-top: 50px!important; }
+    #formulario input[type="email"].form-control { width: 100%;}
 }
 
 /* Medium Devices, Desktops */
@@ -96,9 +107,7 @@
 .btn-formulario {background-color: #57a97d !important;border-color: white; color: white;}
 .btn-formulario:hover {background-color: white!important;border-color: #57a97d; color: #57a97d;}
 
-#formulario input[type="email"].form-control {
-    width: 95%;
-}
+
 
 #formulario .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    white;

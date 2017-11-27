@@ -10,6 +10,8 @@
             'empresa'=>array('layout'=>'default','view'=>'empresa'),
             'servicos'=>array('layout'=>'default','view'=>'servicos'),
             'contato'=>array('layout'=>'default','view'=>'contato'),
+            'links'=>array('layout'=>'default','view'=>'links'),
+            'clientes'=>array('layout'=>'default','view'=>'clientes'),
             
             
         ); //array com todas as rotas disponiveis
