@@ -90,7 +90,35 @@
 .parallax{background-attachment: fixed!important; background-position: center!important; background-repeat: no-repeat!important; background-size: cover!important; }
 .text-img{bottom: 0px!important; width: 100%!important; background-color: rgba(0,0,0,0.7)!important;}
 .texto-parallax{border-radius: 12px; background-color: rgba(0,0,0,0.7)!important; padding: 7px!important;}
+#iframeMaps { width: 100%; height: 310px }
+#formulario .form-control {background-color: #57a97d !important; color: white; border-color: white; border-radius: 0px;}
 
+.btn-formulario {background-color: #57a97d !important;border-color: white; color: white;}
+.btn-formulario:hover {background-color: white!important;border-color: #57a97d; color: #57a97d;}
+
+#formulario input[type="email"].form-control {
+    width: 95%;
+}
+
+#formulario .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+}
+#formulario .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    white;
+}
+#formulario .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    white;
+}
+#formulario .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    white;
+}
+#formulario .form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color:    white;
+}
+
+#formulario .form-control ::placeholder { /* Most modern browsers support this now. */
+    color:    white;
+}
 
 .Absolute {position: absolute!important;}
 .Relative {position: relative!important;}

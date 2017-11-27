@@ -28,7 +28,7 @@
                     </li>
 					<li><a class="Uppercase item-header azul-fonte size18" href="#">CLIENTES</a></li>
 					<li><a class="Uppercase item-header azul-fonte size18" href="#">LINKS</a></li>
-					<li><a class="Uppercase item-header azul-fonte size18" href="#">CONTATO</a></li>
+					<li><a class="Uppercase item-header azul-fonte size18" href="<?= RAIZSITE ?>/contato">CONTATO</a></li>
 				</ul>
 			</div>
 		</div>
