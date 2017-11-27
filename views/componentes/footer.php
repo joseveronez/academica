@@ -1,3 +1,27 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 PaddingT3p PaddingB3p bg-aqua-alt branco-fonte">
+    <div class="container">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding-zero">
+            <h4 class="size25 Light" ><div class="bullet"></div>Informativos</h4>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
+            <hr class="hr-azul">
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero MarginB7p">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-zero MarginT3p">
+                <h4 class="margin-zero MarginT1p azul-fonte">13 Nov 2013</h4>
+                <h4 class="margin-zero MarginT1p">Orçamento aprova destinação de R$ 2,5 bilhões para o Fies</h4>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-zero MarginT3p">
+                <h4 class="margin-zero MarginT1p azul-fonte">13 Nov 2013</h4>
+                <h4 class="margin-zero MarginT1p">Comissão aprova reestimativa de receita para o Orçamento de 2014</h4>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-zero MarginT3p">
+                <h4 class="margin-zero MarginT1p azul-fonte">13 Nov 2013</h4>
+                <h4 class="margin-zero MarginT1p">Aprovação do piso salarial dos agentes de saúde preocupa Dilma, diz líder do PSC</h4>
+            </div>
+        </div>
+    </div>
+</div>
 <footer>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero bg-cinza">
         <div class="container">

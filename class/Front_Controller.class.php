@@ -7,6 +7,8 @@
     {
         private static $_routes = array(
             ''=>array('layout'=>'default','view'=>'home'),
+            'empresa'=>array('layout'=>'default','view'=>'empresa'),
+            
             
         ); //array com todas as rotas disponiveis
         private static $_pagina; //pagina requisitada
