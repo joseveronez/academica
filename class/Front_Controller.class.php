@@ -12,6 +12,7 @@
             'contato'=>array('layout'=>'default','view'=>'contato'),
             'links'=>array('layout'=>'default','view'=>'links'),
             'clientes'=>array('layout'=>'default','view'=>'clientes'),
+            'cursos'=>array('layout'=>'default','view'=>'cursos'),
             
             
         ); //array com todas as rotas disponiveis

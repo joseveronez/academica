@@ -1,8 +1,8 @@
 <nav class="navbar navbar-default navbar-transparente navbar-fixed-top">
 	<div class="container" id="navbar-height" style="">
-		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12  padding-zero">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-right: 0px">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -22,8 +22,8 @@
 					<li class="dropdown">
                         <a class="Uppercase item-header azul-fonte size15 dropdown-toggle" data-toggle="dropdown" href="#">TREINAMENTOS</a>
                         <ul class="dropdown-menu menu-treinamentos">
-                            <li><a href="#" class="azul-fonte">PRESENCIAL</a></li>
-                            <li><a href="#" class="azul-fonte">ONLINE</a></li>
+                            <li><a href="<?= RAIZSITE ?>/cursos" class="azul-fonte">PRESENCIAL</a></li>
+                            <li><a href="<?= RAIZSITE ?>/cursos" class="azul-fonte">ONLINE</a></li>
                         </ul>
                     </li>
 					<li><a class="Uppercase item-header azul-fonte size15" href="#">CLIENTES</a></li>

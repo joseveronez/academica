@@ -21,7 +21,7 @@
         background-color: #f8f8f8!important;
         border: 0px!important;
         border-top: 3px solid #012642!important;
-        font-size: 18px!important;
+        font-size: 15px!important;
         color: #012642!important;
     }
     
@@ -31,7 +31,8 @@
     .img-logo{height: 80px!important;}
     
     #navbar-height{ height: 110px; }
-    .margin-header{ margin-top: 220px!important; }
+    .margin-header{ margin-top: 110px!important; }
+    .margin-header-home{ margin-top: 220px!important; }
     
     #formulario input[type="email"].form-control { width: 95%;}
 }
@@ -60,6 +61,7 @@
     .img-logo{height: 50px!important;}
     .centraliza-xs{text-align: center!important;}
     .margin-header{ margin-top: 50px!important; }
+    .margin-header-home{ margin-top: 50px!important; }
     #formulario input[type="email"].form-control { width: 100%;}
 }
 

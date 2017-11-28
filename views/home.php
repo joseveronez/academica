@@ -1,4 +1,4 @@
-<div class="fluid Relative">
+<div class="fluid Relative margin-header">
 	<div class="owl-carousel owl-theme" id="banners">
 		<div class="item">
 		    <div style="background: url('<?= RAIZSITE ?>/imagens/SLIDE.jpg'); background-size: cover; background-position: center center; height: 50vh; width: 100%">
