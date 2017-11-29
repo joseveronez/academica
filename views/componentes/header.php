@@ -26,8 +26,8 @@
                             <li><a href="<?= RAIZSITE ?>/cursos" class="azul-fonte">ONLINE</a></li>
                         </ul>
                     </li>
-					<li><a class="Uppercase item-header azul-fonte size15" href="#">CLIENTES</a></li>
-					<li><a class="Uppercase item-header azul-fonte size15" href="#">LINKS</a></li>
+					<li><a class="Uppercase item-header azul-fonte size15" href="<?= RAIZSITE ?>/clientes">CLIENTES</a></li>
+					<li><a class="Uppercase item-header azul-fonte size15" href="<?= RAIZSITE ?>/links">LINKS</a></li>
 					<li><a class="Uppercase item-header azul-fonte size15" href="<?= RAIZSITE ?>/contato">CONTATO</a></li>
 				</ul>
 			</div>
