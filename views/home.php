@@ -70,11 +70,11 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 parallax PaddingB10p" style="background-image: url('<?= RAIZSITE ?>/imagens/parallax.jpg'); height: 330px;">
     <div class="container">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-sm-offset-6 col-xs-12 MarginT10p padding-zero ">
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs bg-azul circulo" style="margin-right: 10px; top: 30px;">
+            <div class="col-lg-6 col-md-6 col-md-offset-6 col-sm-12 col-xs-12 MarginT10p padding-zero ">
+                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs bg-azul circulo" style="margin-right: 10px; top: 30px;">
                     <img src="<?= RAIZSITE ?>/imagens/ferramenta.png" class="img-responsive" style="margin: 0 auto;">
                 </div>
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 padding-zero texto-parallax">
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 padding-zero texto-parallax">
                     <h4 class="branco-fonte margin-zero">METODOLOGIA APLICADA</h4>
                     <p class="branco-fonte margin-zero">
                         A metodologia utilizada é a de aulas expositivas, apresentação de casos práticos, modelos de 
@@ -84,14 +84,14 @@
             </div>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero MarginT10p">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 MarginB2p padding-zero ">
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 padding-zero texto-parallax">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 MarginB2p padding-zero ">
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 padding-zero texto-parallax">
                     <h4 class="branco-fonte margin-zero">RECURSOS INSTRUCIONAIS</h4>
                     <p class="branco-fonte margin-zero">
                         Recursos de multimídia, demonstrações de casos concretos e apostilas.
                     </p>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs bg-azul circulo" style="margin-left: 10px; top: 5px; ">
+                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs bg-azul circulo" style="margin-left: 10px; top: 5px; ">
                     <img src="<?= RAIZSITE ?>/imagens/livros.png" class="img-responsive" style="margin: 0 auto; height: 33px; weight: 33px;">
                 </div>
             </div>

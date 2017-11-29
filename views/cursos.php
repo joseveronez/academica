@@ -5,7 +5,7 @@
         </div>
     </div>
 </div>
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-aqua branco-fonte PaddingB5p">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-aqua branco-fonte PaddingB7p">
     <div class="container Relative">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MarginT5p padding-zero">
             <h4 class="Bold">Saiba tudo sobre nossos cursos.</h4>
@@ -13,38 +13,50 @@
 irá se surpreender! clique e conheça mais de cada curso.</p>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MarginB2p padding-zero">
-            <div class="row MarginT5p padding-zero">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/consultoria.png'); height: 200px;">
-                        <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Nome do Curso</h3>
-                    </div>
+            <div class="row padding-zero">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 MarginT5p">
+                    <a href="<?= RAIZSITE ?>/informacoes" target="_blank" class="link-default">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/consultoria.png'); height: 200px;">
+                            <h3 class="text-img Absolute text-center branco-fonte margin-zero PaddingT2p PaddingB2p Light">Nome do Curso</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/treinamento.png'); height: 200px;">
-                        <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Nome do Curso</h3>
-                    </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 MarginT5p">
+                    <a href="<?= RAIZSITE ?>/informacoes" target="_blank" class="link-default">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/treinamento.png'); height: 200px;">
+                            <h3 class="text-img Absolute text-center branco-fonte margin-zero PaddingT2p PaddingB2p Light">Nome do Curso</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
-                        <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Nome do Curso</h3>
-                    </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 MarginT5p">
+                    <a href="<?= RAIZSITE ?>/informacoes" target="_blank" class="link-default">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
+                            <h3 class="text-img Absolute text-center branco-fonte margin-zero PaddingT2p PaddingB2p Light">Nome do Curso</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="row MarginT5p padding-zero">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/consultoria.png'); height: 200px;">
-                        <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Nome do Curso</h3>
-                    </div>
+            <div class="row padding-zero">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 MarginT5p">
+                    <a href="<?= RAIZSITE ?>/informacoes" target="_blank" class="link-default">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/consultoria.png'); height: 200px;">
+                            <h3 class="text-img Absolute text-center branco-fonte margin-zero PaddingT2p PaddingB2p Light">Nome do Curso</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/treinamento.png'); height: 200px;">
-                        <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Nome do Curso</h3>
-                    </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 MarginT5p">
+                    <a href="<?= RAIZSITE ?>/informacoes" target="_blank" class="link-default">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/treinamento.png'); height: 200px;">
+                            <h3 class="text-img Absolute text-center branco-fonte margin-zero PaddingT2p PaddingB2p Light">Nome do Curso</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
-                        <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Nome do Curso</h3>
-                    </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 MarginT5p">
+                    <a href="<?= RAIZSITE ?>/informacoes" target="_blank" class="link-default">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
+                            <h3 class="text-img Absolute text-center branco-fonte margin-zero PaddingT2p PaddingB2p Light">Nome do Curso</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

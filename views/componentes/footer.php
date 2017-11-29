@@ -25,8 +25,8 @@
 <footer>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero bg-cinza">
         <div class="container">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero centraliza-xs MarginT3p MarginB6p">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 MarginT3p padding-zero">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero centraliza-xs MarginT3p MarginB7p">
+                <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs MarginT3p padding-zero">
                     <h4><i class="fa fa-bars cinza-fonte" aria-hidden="true"></i>&nbsp;<span class="aqua-fonte">MENU</span></h4>
                     <ul class="list-unstyled cinza-fonte PaddingT1p">
                         <li class="col-xs-6 size18 padding-zero MarginT1p"><a href="#" class="link-default cinza-fonte">Inicial</a></li>
@@ -69,11 +69,14 @@
     </div>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero PaddingT3p PaddingB3p bg-cinza-escuro">
         <div class="container">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 centraliza-xs padding-zero">
+            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 MarginB3p centraliza-xs padding-zero">
                 <h4 class="branco-fonte">© COPYRIGHT 2017 - ACADEMICA</h4>
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 MarginT3p padding-zero">
+            <div class="col-lg-8 col-md-8 col-sm-7 hidden-xs padding-zero">
                 <img src="<?= RAIZSITE ?>/imagens/vale-white.png" class="img-responsive pull-right">
+            </div>
+            <div class="hidden-lg hidden-md hidden-sm col-xs-12 MarginB2p padding-zero">
+                <img src="<?= RAIZSITE ?>/imagens/vale-white.png" class="img-responsive" style="margin: 0 auto;">
             </div>
         </div>
     </div>
