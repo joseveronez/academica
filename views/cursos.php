@@ -7,7 +7,7 @@
 </div>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-aqua branco-fonte PaddingB7p">
     <div class="container Relative">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MarginT5p padding-zero">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MarginT5p padding-zero MarginT5p">
             <h4 class="Bold">Saiba tudo sobre nossos cursos.</h4>
             <p class="size18 Light">Nossa empresa tem o melhor em cursos para sua empresa, utilizando ferramentas inovadoras você
 irá se surpreender! clique e conheça mais de cada curso.</p>

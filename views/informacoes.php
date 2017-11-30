@@ -7,7 +7,7 @@
 </div>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-aqua branco-fonte PaddingB5p">
     <div class="container Relative">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero MarginT5p">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero MarginT7p">
             <div class="hidden-lg hidden-md hidden-sm col-xs-12 MarginB5p padding-zero">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/consultoria.png'); height: 200px;">
                     <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light" style="">Nome do Curso</h3>
@@ -38,7 +38,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero MarginT5p">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero MarginT5p MarginB2p">
             <h4 class="Bold">Conheça também</h4>
              <div class="owl-carousel owl-theme MarginT1p MarginB1p" id="opcoes">
                 <div class="geral-bg Relative" style="background-image: url('<?= RAIZSITE ?>/imagens/consultoria.png'); height: 200px;">

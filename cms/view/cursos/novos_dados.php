@@ -66,13 +66,6 @@
                                 <textarea name="requisitos" type="text" class="form-control tinyMCE" cols="10" rows="10" required></textarea>
                             </div>
                         </div><br>
-                        <div class="control-group row">
-                            <label class="col-sm-2 control-label" align="right">informacoes</label>
-
-                            <div class="col-sm-10">
-                                <textarea name="informacoes" type="text" class="form-control tinyMCE" cols="10" rows="10" required></textarea>
-                            </div>
-                        </div><br>
             			<div class="control-group row">
                             <label class="col-sm-2 control-label" align="right">link_matricula</label>
                             <div class="col-sm-10">

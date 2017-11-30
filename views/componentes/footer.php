@@ -1,4 +1,4 @@
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 PaddingT3p PaddingB3p bg-aqua-alt branco-fonte">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 PaddingT5p PaddingB3p bg-aqua-alt branco-fonte">
     <div class="container">
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding-zero">
             <h4 class="size25 Light" ><div class="bullet"></div>Informativos</h4>
@@ -40,7 +40,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 MarginT3p padding-zero">
                     <h4><i class="fa fa-envelope cinza-fonte" aria-hidden="true"></i>&nbsp;<span class="aqua-fonte">CONTATO</span></h4>
                     <p class="cinza-fonte size18">Rua Heróis de Monte Castelo, 136, <br>Sala 03 - Centro - Mandaguaçu - PR</p>
-                    <p class="cinza-fonte size18 MarginT1p">44 3245 3765 <br> contato@academica.adm.br</p>
+                    <p class="cinza-fonte size18 MarginT1p"><a href="tel:44 3245 3765" class="link-default cinza-fonte link-footer">44 3245 3765</a> <br> <a href="mailto:contato@academica.adm.br" class="link-default cinza-fonte link-footer">contato@academica.adm.br</a></p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 MarginT3p padding-zero">
                     <h4><i class="fa fa-user-circle cinza-fonte" aria-hidden="true"></i>&nbsp;<span class="aqua-fonte">REDES SOCIAIS</span>

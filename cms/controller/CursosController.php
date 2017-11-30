@@ -38,7 +38,6 @@
                 $dados->carga_horaria = $this->requestParametrosPost["carga_horaria"];
                 $dados->localidade = $this->requestParametrosPost["localidade"];
                 $dados->requisitos = $this->requestParametrosPost["requisitos"];
-                $dados->informacoes = $this->requestParametrosPost["informacoes"];
                 $dados->link_matricula = $this->requestParametrosPost["link_matricula"];
                 $dados->save();
 
@@ -94,7 +93,6 @@
                 $dados->carga_horaria = $this->requestParametrosPost["carga_horaria"];
                 $dados->localidade = $this->requestParametrosPost["localidade"];
                 $dados->requisitos = $this->requestParametrosPost["requisitos"];
-                $dados->informacoes = $this->requestParametrosPost["informacoes"];
                 $dados->link_matricula = $this->requestParametrosPost["link_matricula"];
                 $dados->save();
 

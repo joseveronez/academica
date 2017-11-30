@@ -7,7 +7,7 @@
 </div>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-aqua branco-fonte PaddingB5p">
     <div class="container Relative">
-        <div class="col-lg-12 col-md-12 col-sm-12 hidden-xs geral-bg MarginT5p" style="background-image: url('<?= RAIZSITE ?>/imagens/parallax.jpg'); height: 300px;">
+        <div class="col-lg-12 col-md-12 col-sm-12 hidden-xs geral-bg MarginT7p" style="background-image: url('<?= RAIZSITE ?>/imagens/parallax.jpg'); height: 300px;">
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MarginT5p padding-zero">
             <p class="size18 Light">A Acadêmica Consultoria é uma empresa especializada em Consultoria e Assessoria Tributária e Jurídica, com serviços voltados para atender a órgãos públicos, empresas privadas, contabilistas, e também a pessoas físicas que buscam prevenir e regularizar pendências junto à Receita Federal.	Dispomos de uma estrutura moderna e inteligente, preparada para atender os nossos clientes com toda transparência, segurança e credibilidade, já que possuímos amplo conhecimento na Legislação e no Fisco Previdenciário.</p>

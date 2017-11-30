@@ -116,7 +116,7 @@
 .btn-formulario {background-color: #57a97d !important;border-color: white; color: white;}
 .btn-formulario:hover {background-color: white!important;border-color: #57a97d; color: #57a97d;}
 
-
+.link-footer:hover{color: white!important;}
 
 #formulario .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    white;

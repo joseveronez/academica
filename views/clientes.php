@@ -7,7 +7,7 @@
 </div>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-aqua branco-fonte">
     <div class="container Relative">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MarginT5p padding-zero">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MarginT5p padding-zero MarginT6p">
             <p class="size18 Light">A complexidade dos trabalhos e os rigores administrativos e jurídicos contidos na Legislação Previdenciária exigem a contratação de uma empresa altamente especializada, com total habilidade no assunto. Portanto, a escolha correta do profissional, é fundamental para que a instituição não seja exposta a risco eminente de falhas.</p>
             <p class="size18 Light">E a Acadêmica Consultoria possui hoje, todos os atributos necessários para desenvolver trabalhos com garantia de excelentes resultados.</p>
             <p class="size18 Light">A satisfação dos nossos clientes é o nosso sucesso!</p>
