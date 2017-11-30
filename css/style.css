@@ -52,7 +52,7 @@
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 479px) {
-
+    
 }
 
 /* Small Devices, Tablets */
@@ -64,6 +64,7 @@
     .margin-header{ margin-top: 50px!important; }
     .margin-header-home{ margin-top: 50px!important; }
     #formulario input[type="email"].form-control { width: 100%;}
+    .link-txt-font {font-size: 15px!important;}
 }
 
 /* Medium Devices, Desktops */
@@ -109,9 +110,9 @@
 .btn-informacoes{ padding: 2px 3px!important; border: none!important; font-size: 15px!important; border-radius: 0px!important; background-color: #bebebe!important; color: white}
 .btn-matricula{ width: 100%!important; border-radius: 0px!important; border: none!important; background-color: #012642!important; color: white!important; padding: 10px!important;}
 
-.link-img {padding: 8px;text-align: center;background-color: white; color: #012642!important}
-.link-txt {padding: 10px;text-align: center;background-color: #012642; color: white}
-
+.link-img {height: 50px;padding: 0px; padding-top: 1px;text-align: center;background-color: white; color: #012642!important}
+.link-txt { padding: 10px;text-align: center;background-color: #012642; color: white; height: 50px;}
+.link-txt-font {font-size: 20px!important;}
 .btn-formulario {background-color: #57a97d !important;border-color: white; color: white;}
 .btn-formulario:hover {background-color: white!important;border-color: #57a97d; color: #57a97d;}
 
