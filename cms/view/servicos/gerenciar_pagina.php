@@ -35,7 +35,7 @@
                             <label class="col-sm-2 control-label" align="right">texto</label>
 
                             <div class="col-sm-10">
-                                <textarea name="texto" type="text" class="form-control wmd-container" cols="10" rows="10"><?= $dados->texto ?></textarea>
+                                <textarea name="texto" type="text" class="form-control wmd-container tinyMCE" cols="10" rows="10"><?= $dados->texto ?></textarea>
                             </div>
                         </div><br>
             		</div>

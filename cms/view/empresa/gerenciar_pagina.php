@@ -47,7 +47,7 @@
                             <label class="col-sm-2 control-label" align="right">texto_objetivo</label>
 
                             <div class="col-sm-10">
-                                <textarea name="texto_objetivo" type="text" class="form-control wmd-container" cols="10" rows="10"><?= $dados->texto_objetivo ?></textarea>
+                                <textarea name="texto_objetivo" type="text" class="form-control wmd-container tinyMCE" cols="10" rows="10"><?= $dados->texto_objetivo ?></textarea>
                             </div>
                         </div><br>
             			<div class="control-group row">
@@ -60,7 +60,7 @@
                             <label class="col-sm-2 control-label" align="right">texto_missao</label>
 
                             <div class="col-sm-10">
-                                <textarea name="texto_missao" type="text" class="form-control wmd-container" cols="10" rows="10"><?= $dados->texto_missao ?></textarea>
+                                <textarea name="texto_missao" type="text" class="form-control wmd-container tinyMCE" cols="10" rows="10"><?= $dados->texto_missao ?></textarea>
                             </div>
                         </div><br>
             			<div class="control-group row">
@@ -73,7 +73,7 @@
                             <label class="col-sm-2 control-label" align="right">texto_equipe</label>
 
                             <div class="col-sm-10">
-                                <textarea name="texto_equipe" type="text" class="form-control wmd-container" cols="10" rows="10"><?= $dados->texto_equipe ?></textarea>
+                                <textarea name="texto_equipe" type="text" class="form-control wmd-container tinyMCE" cols="10" rows="10"><?= $dados->texto_equipe ?></textarea>
                             </div>
                         </div><br>
             		</div>

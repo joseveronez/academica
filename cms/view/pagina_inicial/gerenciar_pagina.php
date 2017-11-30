@@ -25,7 +25,7 @@
                             <label class="col-sm-2 control-label" align="right">texto_objetivo</label>
 
                             <div class="col-sm-10">
-                                <textarea name="texto_objetivo" type="text" class="form-control wmd-container" cols="10" rows="10"><?= $dados->texto_objetivo ?></textarea>
+                                <textarea name="texto_objetivo" type="text" class="form-control wmd-container tinyMCE" cols="10" rows="10"><?= $dados->texto_objetivo ?></textarea>
                             </div>
                         </div><br>
             			<div class="control-group row">
@@ -38,7 +38,7 @@
                             <label class="col-sm-2 control-label" align="right">texto_parallax</label>
 
                             <div class="col-sm-10">
-                                <textarea name="texto_parallax" type="text" class="form-control wmd-container" cols="10" rows="10"><?= $dados->texto_parallax ?></textarea>
+                                <textarea name="texto_parallax" type="text" class="form-control wmd-container tinyMCE" cols="10" rows="10"><?= $dados->texto_parallax ?></textarea>
                             </div>
                         </div><br>
             			<div class="control-group row">
@@ -51,7 +51,7 @@
                             <label class="col-sm-2 control-label" align="right">texto_parallax_2</label>
 
                             <div class="col-sm-10">
-                                <textarea name="texto_parallax_2" type="text" class="form-control wmd-container" cols="10" rows="10"><?= $dados->texto_parallax_2 ?></textarea>
+                                <textarea name="texto_parallax_2" type="text" class="form-control wmd-container tinyMCE" cols="10" rows="10"><?= $dados->texto_parallax_2 ?></textarea>
                             </div>
                         </div><br>
             			<div class="control-group row">
