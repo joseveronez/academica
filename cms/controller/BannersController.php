@@ -17,9 +17,7 @@
 		}
         public function salvar_dados() {
             try {
-                $ult_ordem = Banners::sql('select ordem from :table order by ordem desc limit 1');
                 $dados = new Banners();
-                $dados->ordem = $ult_ordem[0]->ordem + 1;
                 $dados->titulo = $this->requestParametrosPost["titulo"];
                 if (!empty($_FILES['imagem']['name'])) {
                     $handle = new upload($_FILES['imagem']);
@@ -34,6 +32,7 @@
                         }
                     }
                 }
+                $dados->caminho = $this->requestParametrosPost["caminho"];
                 $dados->save();
 
                 setSession("sucesso", "S");
@@ -82,6 +81,7 @@
                         }
                     }
                 }
+                $dados->caminho = $this->requestParametrosPost["caminho"];
                 $dados->save();
 
                 setSession("sucesso", "S");

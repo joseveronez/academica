@@ -4,19 +4,19 @@
 <div class="col-md-9 pull-right conteudo">
     <div class="fluid content">
         <section>
-            <h1><i class="fa fa-flag" aria-hidden="true"></i>&nbsp;Banners Home - Gerenciar</h1>
-            <h4 class="sub-title">Banners</h4>
+            <h1><i class="fa fa-link" aria-hidden="true"></i>&nbsp;Banners Home - Gerenciar</h1>
+            <h4 class="sub-title">Links</h4>
 
             <div class="box">
                 <div class="box-title">
-                    <h3 class="box-title-title"><i class="fa fa-flag" aria-hidden="true"></i>&nbsp;&nbsp;Banners <button type="button" id="btnSalvaOrdem" class="btn btn-success sr-only">Salvar Ordem</button></h3>
+                    <h3 class="box-title-title"><i class="fa fa-link" aria-hidden="true"></i>&nbsp;&nbsp;Banners Home</h3>
                 </div>
                 <div class="box-content">
         			<div class="panel-body content table-responsive table-full-width" style="background-color:#FFFFFF; color:#000000;">
                         <table id="example" class="display" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
-                                	<th>Ordem</th>
+                                	
                                     <th>titulo</th>
                                     <th>imagem</th>
                                     <th>&nbsp;</th>
@@ -27,10 +27,7 @@
                                 <?php
                                     foreach ($dados as $item) {
                                 ?>
-                                <tr class="ordenacao" data-id="<?= $item->id ?>">
-					                <td>
-                                    	<?= $item->ordem ?>
-                               		</td>
+                                <tr>
 					                <td>
                                     	<?= $item->titulo ?>
                                		</td>
@@ -94,56 +91,6 @@
                 .always(function() {
                     console.log("complete");
                 });
-            });
-        });
-    });
-</script>
-<script type="text/javascript" src="<?= caminhoSite ?>/js/jquery-ui.min.js"></script>
-<script type="text/javascript">
-    $("#example").dataTable({
-        "pageLength": 50
-    });
-
-    $(document).ready(function() {
-    	var fixHelper = function(e, ui) {
-            ui.children().each(function() {
-                $(this).width($(this).width());
-            });
-            return ui;
-        };
-        
-        $("#example tbody").sortable({
-            helper: fixHelper
-        }).disableSelection();
-
-        $("#example tbody").on("sortchange", function( event, ui ) {
-            if ($("#btnSalvaOrdem").hasClass("sr-only")) {
-                $("#btnSalvaOrdem").removeClass("sr-only");
-            }
-        } );
-
-        $("#btnSalvaOrdem").click(function(event) {
-            var cont = 1;
-            var ordem = [];
-            $(".ordenacao").each(function(index, el) {
-                ordem[cont] = $(this).attr("data-id");
-                cont++;
-            });
-            $.ajax({
-                url: "<?= caminhoSite ?>/banners/salva-ordem",
-                type: "POST",
-                data: {ordens: ordem},
-            })
-            .done(function(data) {
-                console.log("success");
-                console.log(data);
-                location.reload();
-            })
-            .fail(function() {
-                console.log("error");
-            })
-            .always(function() {
-                console.log("complete");
             });
         });
     });

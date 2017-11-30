@@ -28,6 +28,7 @@
                 $dados->numero = $this->requestParametrosPost["numero"];
                 $dados->complemento = $this->requestParametrosPost["complemento"];
                 $dados->bairro = $this->requestParametrosPost["bairro"];
+                $dados->cidade = $this->requestParametrosPost["cidade"];
                 $dados->uf = $this->requestParametrosPost["uf"];
                 $dados->telefone = $this->requestParametrosPost["telefone"];
                 $dados->whatsapp = $this->requestParametrosPost["whatsapp"];

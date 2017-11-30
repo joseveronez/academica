@@ -16,7 +16,6 @@
                         <table id="example" class="display" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
-                                	
                                     <th>nome</th>
                                     <th>tipo</th>
                                     <th>imagem</th>
@@ -34,7 +33,13 @@
                                     	<?= $item->nome ?>
                                		</td>
 					                <td>
-                                    	<?= $item->tipo ?>
+                                    	<?php
+                                            if($item->tipo == 1 ){
+                                                echo "Online";
+                                            }else if($item->tipo == 2 ){
+                                                echo "Offline";
+                                            }
+                                        ?>
                                		</td>
 					                <td>
                                     	<?= $item->imagem ?>

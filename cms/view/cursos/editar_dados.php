@@ -24,7 +24,10 @@
             			<div class="control-group row">
                             <label class="col-sm-2 control-label" align="right">tipo</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="tipo" maxlength="1" value="<?= $dados->tipo ?>" />
+                                <select type="text" class="form-control" name="tipo" maxlength="1"> value="<?= $dados->tipo ?>
+                                    <option value="1" <?php if($dados->tipo == 1) echo "selected" ?> >Online</option>
+                                    <option value="2" <?php if($dados->tipo == 2) echo "selected" ?> >Offline</option>
+                                </select>
                             </div>
                         </div><br>
             			<div class="control-group row">

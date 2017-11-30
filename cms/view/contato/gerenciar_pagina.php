@@ -57,6 +57,12 @@
                                 <input type="text" class="form-control" name="bairro" maxlength="255" value="<?= $dados->bairro ?>" />
                             </div>
                         </div><br>
+                        <div class="control-group row">
+                            <label class="col-sm-2 control-label" align="right">cidade</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="cidade" maxlength="255" value="<?= $dados->cidade ?>" />
+                            </div>
+                        </div><br>
             			<div class="control-group row">
                             <label class="col-sm-2 control-label" align="right">uf</label>
                             <div class="col-sm-10">

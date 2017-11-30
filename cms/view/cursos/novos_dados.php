@@ -19,7 +19,11 @@
             			<div class="control-group row">
                             <label class="col-sm-2 control-label" align="right">tipo</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="tipo" maxlength="1" required />
+                                <select type="text" class="form-control" name="tipo" maxlength="1" required >
+                                    <option disabled selected>Selecione uma opção</option>
+                                    <option value="1">Online</option>
+                                    <option value="2">Offline</option>
+                                </select>
                             </div>
                         </div><br>
             			<div class="control-group row">
