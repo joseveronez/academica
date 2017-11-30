@@ -20,17 +20,14 @@
         	<div id="wrapper">
                 <div id="sidebar-wrapper" style="background-color:#17181b">
                 	<ul class="lista">
-
-						<li class="item <?php if($_SESSION["paginaAtual"] == "pagina_inicial/") echo "menu-active-side" ?>">
-                            <a href="<?= caminhoSite ?>/pagina_inicial/"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Pagina Home
-                            <span class="glyphicon glyphicon-menu-right pull-right"></span></a>
-                        </li>
-
 						<li class="item <?php if($_SESSION["paginaAtual"] == "pagina_inicial/gerenciar") echo "menu-active-side" ?>">
 	                        <a href="#" class="menu-item-side"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Pagina Home
 	                        <span class="glyphicon glyphicon-menu-right pull-right"></span></a>
 	                    </li>
 	                    <ul class="lista-sub-itens <?php if($_SESSION["paginaAtual"] == "pagina_inicial/gerenciar") echo "menu-open-side"; else echo "menu-close-side"; ?>" id="config_form" name="config_form">
+                            <li class="sub-item <?php if($_SESSION["blackPage"] == "pagina_inicial/gerenciar-pagina") echo "black" ?>">
+	                            <a href="<?= caminhoSite ?>/pagina_inicial/gerenciar-pagina">Gerenciar Página</a>
+	                        </li>
 	                    	<li class="sub-item <?php if($_SESSION["blackPage"] == "banners/novos-dados") echo "black" ?>">
 	                            <a href="<?= caminhoSite ?>/banners/novos-dados">Novo Banner</a>
 	                        </li>
@@ -39,18 +36,13 @@
 	                        </li>
                     	</ul>
 
-						<li class="item <?php if($_SESSION["paginaAtual"] == "empresa/") echo "menu-active-side" ?>">
-                            <a href="<?= caminhoSite ?>/empresa/"><i class="fa fa-building" aria-hidden="true"></i>&nbsp;&nbsp;Empresa
+						<li class="item <?php if($_SESSION["paginaAtual"] == "empresa/gerenciar-pagina") echo "menu-active-side" ?>">
+                            <a href="<?= caminhoSite ?>/empresa/gerenciar-pagina"><i class="fa fa-building" aria-hidden="true"></i>&nbsp;&nbsp;Empresa
                             <span class="glyphicon glyphicon-menu-right pull-right"></span></a>
                         </li>
 
-						<li class="item <?php if($_SESSION["paginaAtual"] == "servicos/") echo "menu-active-side" ?>">
-                            <a href="<?= caminhoSite ?>/servicos/"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Servicos
-                            <span class="glyphicon glyphicon-menu-right pull-right"></span></a>
-                        </li>
-
-						<li class="item <?php if($_SESSION["paginaAtual"] == "pagina_cursos/") echo "menu-active-side" ?>">
-                            <a href="<?= caminhoSite ?>/pagina_cursos/"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Cursos
+						<li class="item <?php if($_SESSION["paginaAtual"] == "servicos/gerenciar-pagina") echo "menu-active-side" ?>">
+                            <a href="<?= caminhoSite ?>/servicos/gerenciar-pagina"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Servicos
                             <span class="glyphicon glyphicon-menu-right pull-right"></span></a>
                         </li>
 
@@ -59,6 +51,9 @@
 	                        <span class="glyphicon glyphicon-menu-right pull-right"></span></a>
 	                    </li>
 	                    <ul class="lista-sub-itens <?php if($_SESSION["paginaAtual"] == "pagina_cursos/gerenciar") echo "menu-open-side"; else echo "menu-close-side"; ?>" id="config_form" name="config_form">
+                            <li class="sub-item <?php if($_SESSION["blackPage"] == "pagina_cursos/gerenciar-pagina") echo "black" ?>">
+	                            <a href="<?= caminhoSite ?>/pagina_cursos/gerenciar-pagina">Gerenciar Página</a>
+	                        </li>
 	                    	<li class="sub-item <?php if($_SESSION["blackPage"] == "cursos/novos-dados") echo "black" ?>">
 	                            <a href="<?= caminhoSite ?>/cursos/novos-dados">Novo Curso</a>
 	                        </li>
@@ -67,16 +62,14 @@
 	                        </li>
                     	</ul>
 
-						<li class="item <?php if($_SESSION["paginaAtual"] == "pagina_clientes/") echo "menu-active-side" ?>">
-                            <a href="<?= caminhoSite ?>/pagina_clientes/"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Clientes
-                            <span class="glyphicon glyphicon-menu-right pull-right"></span></a>
-                        </li>
-
 						<li class="item <?php if($_SESSION["paginaAtual"] == "pagina_clientes/gerenciar") echo "menu-active-side" ?>">
 	                        <a href="#" class="menu-item-side"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Clientes
 	                        <span class="glyphicon glyphicon-menu-right pull-right"></span></a>
 	                    </li>
 	                    <ul class="lista-sub-itens <?php if($_SESSION["paginaAtual"] == "pagina_clientes/gerenciar") echo "menu-open-side"; else echo "menu-close-side"; ?>" id="config_form" name="config_form">
+                            <li class="sub-item <?php if($_SESSION["blackPage"] == "pagina_clientes/gerenciar-pagina") echo "black" ?>">
+	                            <a href="<?= caminhoSite ?>/pagina_clientes/gerenciar-pagina">Gerenciar Página</a>
+	                        </li>
 	                    	<li class="sub-item <?php if($_SESSION["blackPage"] == "clientes/novos-dados") echo "black" ?>">
 	                            <a href="<?= caminhoSite ?>/clientes/novos-dados">Novo cliente</a>
 	                        </li>
@@ -98,18 +91,13 @@
 	                        </li>
                     	</ul>
 
-						<li class="item <?php if($_SESSION["paginaAtual"] == "contato/") echo "menu-active-side" ?>">
-                            <a href="<?= caminhoSite ?>/contato/"><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;&nbsp;Contato
+						<li class="item <?php if($_SESSION["paginaAtual"] == "contato/gerenciar-pagina") echo "menu-active-side" ?>">
+                            <a href="<?= caminhoSite ?>/contato/gerenciar-pagina"><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;&nbsp;Contato
                             <span class="glyphicon glyphicon-menu-right pull-right"></span></a>
                         </li>
 
-						<li class="item <?php if($_SESSION["paginaAtual"] == "configuracoes/") echo "menu-active-side" ?>">
-                            <a href="<?= caminhoSite ?>/configuracoes/"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;&nbsp;Configurações
-                            <span class="glyphicon glyphicon-menu-right pull-right"></span></a>
-                        </li>
-
-						<li class="item <?php if($_SESSION["paginaAtual"] == "/") echo "menu-active-side" ?>">
-                            <a href="<?= caminhoSite ?>//"><i class="fa " aria-hidden="true"></i>&nbsp;&nbsp;
+						<li class="item <?php if($_SESSION["paginaAtual"] == "configuracoes/gerenciar-pagina") echo "menu-active-side" ?>">
+                            <a href="<?= caminhoSite ?>/configuracoes/gerenciar-pagina"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;&nbsp;Configurações
                             <span class="glyphicon glyphicon-menu-right pull-right"></span></a>
                         </li>
 
