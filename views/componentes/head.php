@@ -1,3 +1,9 @@
+<?php
+    require RAIZ.'/cms/includes/config.php';
+    require RAIZ.'/cms/model/Tabelas.php';
+    $config = Configuracoes::sql("SELECT * FROM configuracoes", SimpleOrm::FETCH_ONE);
+    $contato = Contato::sql("SELECT * FROM contato", SimpleOrm::FETCH_ONE)
+?>
 <!DOCTYPE html>
 <html>
 <head>

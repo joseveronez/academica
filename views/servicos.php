@@ -1,3 +1,6 @@
+<?php
+    $servicos = Servicos::sql("SELECT * FROM servicos", SimpleOrm::FETCH_ONE);
+?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-header bg-azul branco-fonte">
     <div class="container Relative">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
@@ -7,10 +10,10 @@
 </div>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-aqua branco-fonte PaddingB5p">
     <div class="container Relative">
-        <div class="col-lg-12 col-md-12 col-sm-12 hidden-xs geral-bg MarginT7p" style="background-image: url('<?= RAIZSITE ?>/imagens/parallax.jpg'); height: 300px;">
+        <div class="col-lg-12 col-md-12 col-sm-12 hidden-xs geral-bg MarginT7p" style="background-image: url('<?= RAIZSITE ?>/cms/uploads/<?= $servicos->banner ?>'); height: 300px;">
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MarginT5p padding-zero">
-            <p class="size18 Light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a egestas nulla. Quisque non ultricies sem. Nunc arcu velit, viverra eu lacinia sed, vehicula eget libero. Praesent vel mauris a mi consectetur dignissim at vel mi. Nullam iaculis nulla mi, ac dignissim libero eleifend id. Aenean auctor fringilla viverra. Nulla facilisi. Quisque laoreet urna nulla, aliquet finibus est gravida et. Maecenas vehicula diam non dolor molestie suscipit. Proin cursus tortor ligula, sit amet feugiat turpis eleifend eget. Aenean tincidunt sodales ex quis euismod. Nulla facilisi.</p>
+            <span class="size18 Light"><?= $servicos->texto ?></span>
         </div>
     </div>
 </div>

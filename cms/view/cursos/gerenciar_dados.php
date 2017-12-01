@@ -37,7 +37,7 @@
                                             if($item->tipo == 1 ){
                                                 echo "Online";
                                             }else if($item->tipo == 2 ){
-                                                echo "Offline";
+                                                echo "Presencial";
                                             }
                                         ?>
                                		</td>

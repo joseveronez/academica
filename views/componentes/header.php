@@ -9,7 +9,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="<?= RAIZSITE ?>">
-					<img src="<?= RAIZSITE ?>/imagens/logo.png" class="img-responsive img-logo" style="margin: 0 auto!important; height: 80px;">
+					<img src="<?= RAIZSITE ?>/cms/uploads/<?= $config->logo_header ?>" class="img-responsive img-logo" style="margin: 0 auto!important; height: 80px;">
 				</a>
 			</div>
 		</div>
@@ -22,8 +22,8 @@
 					<li class="dropdown">
                         <a class="Uppercase item-header azul-fonte size15 dropdown-toggle" data-toggle="dropdown" href="#">TREINAMENTOS</a>
                         <ul class="dropdown-menu menu-treinamentos">
-                            <li><a href="<?= RAIZSITE ?>/cursos" class="azul-fonte">PRESENCIAL</a></li>
-                            <li><a href="<?= RAIZSITE ?>/cursos" class="azul-fonte">ONLINE</a></li>
+                            <li><a href="<?= RAIZSITE ?>/cursos/presencial" class="azul-fonte">PRESENCIAL</a></li>
+                            <li><a href="<?= RAIZSITE ?>/cursos/online" class="azul-fonte">ONLINE</a></li>
                         </ul>
                     </li>
 					<li><a class="Uppercase item-header azul-fonte size15" href="<?= RAIZSITE ?>/clientes">CLIENTES</a></li>

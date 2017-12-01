@@ -26,7 +26,7 @@
                             <div class="col-sm-10">
                                 <select type="text" class="form-control" name="tipo" maxlength="1"> value="<?= $dados->tipo ?>
                                     <option value="1" <?php if($dados->tipo == 1) echo "selected" ?> >Online</option>
-                                    <option value="2" <?php if($dados->tipo == 2) echo "selected" ?> >Offline</option>
+                                    <option value="2" <?php if($dados->tipo == 2) echo "selected" ?> >Presencial</option>
                                 </select>
                             </div>
                         </div><br>

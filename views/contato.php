@@ -1,3 +1,6 @@
+<?php 
+    $contato = Contato::sql("SELECT * FROM contato", SimpleOrm::FETCH_ONE)
+?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-header bg-azul branco-fonte">
     <div class="container Relative">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
@@ -9,12 +12,11 @@
     <div class="container">
         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 padding-zero MarginB2p branco-fonte">
             <h4 class="Bold">Acadêmica</h4>
-            <p>Rua Heróis de Monte Castelo, 136, <br>
-                Sala 03 - Centro - Mandaguaçu - PR
+            <p><?= $contato->endereco ?>, <?= $contato->numero ?>, <br><?= $contato->complemento ?> - <?= $contato->bairro ?> - <?= $contato->cidade ?> - <?= $contato->uf ?>
             </p>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero bloco-mapa">
                 <div class="google-maps">
-                    <iframe id="iframeMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7326.411390206681!2d-52.096309347931594!3d-23.34456126503007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed2b4dd64a0303%3A0x7d75400779b57256!2sR.+Her%C3%B3is+de+Monte+Castelo%2C+136+-+03+-+Centro%2C+Mandagua%C3%A7u+-+PR%2C+87160-000!5e0!3m2!1spt-BR!2sbr!4v1511796830872"></iframe>
+                    <iframe id="iframeMaps" src="<?= $contato->mapa ?>"></iframe>
                 </div>
             </div>
         </div>

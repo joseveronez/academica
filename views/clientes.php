@@ -1,3 +1,7 @@
+<?php
+    $pagina = PaginaClientes::sql("SELECT * FROM pagina_clientes", SimpleOrm::FETCH_ONE);
+    $clientes = Clientes::sql("SELECT * FROM clientes");
+?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-header bg-azul branco-fonte">
     <div class="container Relative">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
@@ -8,53 +12,24 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-aqua branco-fonte">
     <div class="container Relative">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MarginT5p padding-zero MarginT6p">
-            <p class="size18 Light">A complexidade dos trabalhos e os rigores administrativos e jurídicos contidos na Legislação Previdenciária exigem a contratação de uma empresa altamente especializada, com total habilidade no assunto. Portanto, a escolha correta do profissional, é fundamental para que a instituição não seja exposta a risco eminente de falhas.</p>
-            <p class="size18 Light">E a Acadêmica Consultoria possui hoje, todos os atributos necessários para desenvolver trabalhos com garantia de excelentes resultados.</p>
-            <p class="size18 Light">A satisfação dos nossos clientes é o nosso sucesso!</p>
+            <span class="size18 Light"><?= $pagina->texto ?></span>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MarginB2p padding-zero">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MarginT5p padding-zero">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 MarginB5p">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/academica.jpg'); height: 200px;">
-                        </div>
-                        <h3 class="Light text-center">Acadêmica</h3>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 MarginB5p">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/academica.jpg'); height: 200px;">
-                        </div>
-                        <h3 class="Light text-center">Acadêmica</h3>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 MarginB5p">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/academica.jpg'); height: 200px;">
-                        </div>
-                        <h3 class="Light text-center">Acadêmica</h3>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 MarginB5p">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/academica.jpg'); height: 200px;">
-                        </div>
-                        <h3 class="Light text-center">Acadêmica</h3>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 MarginB5p">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/academica.jpg'); height: 200px;">
-                        </div>
-                        <h3 class="Light text-center">Acadêmica</h3>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 MarginB5p">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/academica.jpg'); height: 200px;">
-                        </div>
-                        <h3 class="Light text-center">Acadêmica</h3>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 MarginB5p">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/academica.jpg'); height: 200px;">
-                        </div>
-                        <h3 class="Light text-center">Acadêmica</h3>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 MarginB5p">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/imagens/academica.jpg'); height: 200px;">
-                        </div>
-                        <h3 class="Light text-center">Acadêmica</h3>
-                    </div>
+                    <?php
+                        foreach ($clientes as $cliente){ 
+                            ?>
+                                <a href="<?= $cliente->caminho ?>" target="_blank">
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 MarginB5p">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero Relative padding-zero geral-bg" style="background-image: url('<?= RAIZSITE ?>/cms/uploads/<?= $cliente->logo ?>'); height: 200px;">
+                                        </div>
+                                        <h3 class="Light text-center branco-fonte">Acadêmica</h3>
+                                    </div>
+                                </a>
+                            <?php
+                        }
+                    ?>
                 </div>
             </div>
         </div>

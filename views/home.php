@@ -1,18 +1,24 @@
-<div class="fluid Relative margin-header">
+<?php
+    $home = PaginaInicial::sql("SELECT * FROM pagina_inicial", SimpleOrm::FETCH_ONE);
+    $banners = Banners::sql("SELECT * FROM banners");
+    $rand = Cursos::sql("SELECT * FROM cursos WHERE slug != '$page' ORDER BY RAND() LIMIT 9");
+?>
+<div class="fluid Relative margin-header MarginT14p">
 	<div class="owl-carousel owl-theme" id="banners">
-		<div class="item">
-		    <div style="background: url('<?= RAIZSITE ?>/imagens/SLIDE.jpg'); background-size: cover; background-position: center center; height: 50vh; width: 100%">
-		    	<div class="container">
-    
-		    	</div>
-		    </div>
-	    </div>
-	    <div class="item">
-		    <div style="background: url('<?= RAIZSITE ?>/imagens/SLIDE.jpg'); background-size: cover; background-position: center center; height: 50vh; width: 100%">
-		    	<div class="container">
-		    	</div>
-		    </div>
-	    </div>
+        <?php 
+            foreach($banners as $banner){
+                ?>
+                    <div class="item">
+                        <a href="<?= $banner->caminho ?>" target="_blank">
+                            <div style="background: url('<?= RAIZSITE ?>/imagens/SLIDE.jpg'); background-size: cover; background-position: center center; height: 30vh; width: 100%">
+                                <div class="container">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                <?php
+            }
+        ?>
 	</div>
 </div>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 PaddingT10p PaddingB10p bg-aqua branco-fonte">
@@ -23,46 +29,28 @@
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero MarginT3p">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding-zero">
-                <h4 class="size25 Light"><div class="bullet"></div>Nosso Objetivo</h4>
+                <h4 class="size25 Light"><div class="bullet"></div><?= $home->titulo_objetivo ?></h4>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 padding-zero">
                 <p class="Light">
-                    É desenvolver um trabalho personalizado que consiste em, analisar individualmente 
-                    cada caso, detectar possíveis problemas, e apontar soluções eficientes, que 
-                    garantam a total regularidade das obrigações fiscais de nossos clientes.
+                    <?= $home->texto_objetivo ?>
                 </p>
             </div>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
             <hr class="hr-azul MarginB4p">
             <div class="owl-carousel owl-theme MarginT1p MarginB1p" id="servicos">
-                <div class="geral-bg Relative" style="background-image: url('<?= RAIZSITE ?>/imagens/consultoria.png'); height: 200px;">
-                    <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Consultoria</h3>
-                </div>
-                <div class="geral-bg Relative" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
-                    <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Contabilidade</h3>
-                </div>
-                <div class="geral-bg Relative" style="background-image: url('<?= RAIZSITE ?>/imagens/treinamento.png'); height: 200px;">
-                    <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Treinamento</h3>
-                </div>
-                <div class="geral-bg Relative" style="background-image: url('<?= RAIZSITE ?>/imagens/consultoria.png'); height: 200px;">
-                    <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Consultoria</h3>
-                </div>
-                <div class="geral-bg Relative" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
-                    <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Contabilidade</h3>
-                </div>
-                <div class="geral-bg Relative" style="background-image: url('<?= RAIZSITE ?>/imagens/treinamento.png'); height: 200px;">
-                    <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Treinamento</h3>
-                </div>
-                <div class="geral-bg Relative" style="background-image: url('<?= RAIZSITE ?>/imagens/consultoria.png'); height: 200px;">
-                    <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Consultoria</h3>
-                </div>
-                <div class="geral-bg Relative" style="background-image: url('<?= RAIZSITE ?>/imagens/teste.jpg'); height: 200px;">
-                    <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Contabilidade</h3>
-                </div>
-                <div class="geral-bg Relative" style="background-image: url('<?= RAIZSITE ?>/imagens/treinamento.png'); height: 200px;">
-                    <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light">Treinamento</h3>
-                </div>
+                <?php 
+                    foreach($rand as $curso){
+                    ?>
+                        <a href="<?= RAIZSITE ?>/informacoes/<?= $curso->slug ?>" target="_blank">
+                            <div class="geral-bg Relative" style="background-image: url('<?= RAIZSITE ?>/cms/uploads/<?= $curso->imagem ?>'); height: 200px;">
+                                <h3 class="text-img Absolute text-center margin-zero PaddingT2p PaddingB2p Light branco-fonte"><?= $curso->nome ?></h3>
+                            </div>
+                        </a>
+                    <?php
+                    }
+                 ?>
             </div>
         </div>
     </div>
@@ -75,10 +63,9 @@
                     <img src="<?= RAIZSITE ?>/imagens/ferramenta.png" class="img-responsive" style="margin: 0 auto;">
                 </div>
                 <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 padding-zero texto-parallax">
-                    <h4 class="branco-fonte margin-zero">METODOLOGIA APLICADA</h4>
+                    <h4 class="branco-fonte margin-zero"><?= $home->titulo_parallax ?></h4>
                     <p class="branco-fonte margin-zero">
-                        A metodologia utilizada é a de aulas expositivas, apresentação de casos práticos, modelos de 
-                        procedimentos inovadores com  aferição de resultados, dentro do tema escolhido.
+                        <?= $home->texto_parallax ?>
                     </p>
                 </div>
             </div>
@@ -86,9 +73,9 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero MarginT10p">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 MarginB2p padding-zero ">
                 <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 padding-zero texto-parallax">
-                    <h4 class="branco-fonte margin-zero">RECURSOS INSTRUCIONAIS</h4>
+                    <h4 class="branco-fonte margin-zero"><?= $home->titulo_parallax_2 ?></h4>
                     <p class="branco-fonte margin-zero">
-                        Recursos de multimídia, demonstrações de casos concretos e apostilas.
+                        <?= $home->texto_parallax_2 ?>
                     </p>
                 </div>
                 <div class="col-lg-1 col-md-1 hidden-sm hidden-xs bg-azul circulo" style="margin-left: 10px; top: 5px; ">

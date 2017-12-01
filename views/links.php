@@ -1,3 +1,6 @@
+<?php
+    $links = Links::sql("SELECT * FROM links");
+?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-header bg-azul branco-fonte">
     <div class="container Relative">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
@@ -9,54 +12,20 @@
     <div class="container Relative">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MarginT5p padding-zero">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 MarginT3p">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 link-img PaddignT2p PaddignB2p">
-                            <a href="#" target="_blank" class="link-default azul-fonte"><img src="<?= RAIZSITE ?>/imagens/link.png"></a>
-                    </div>
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9 link-txt">
-                        <h4 class="margin-zero link-txt-font">Certidão da SEFAZ</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 MarginT3p">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 link-img PaddignT2p PaddignB2p">
-                            <a href="#" target="_blank" class="link-default azul-fonte"><img src="<?= RAIZSITE ?>/imagens/link.png"></a>
-                    </div>
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9 link-txt">
-                        <h4 class="margin-zero link-txt-font">Certidão da SEFAZ</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 MarginT3p">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 link-img PaddignT2p PaddignB2p">
-                            <a href="#" target="_blank" class="link-default azul-fonte"><img src="<?= RAIZSITE ?>/imagens/link.png"></a>
-                    </div>
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9 link-txt">
-                        <h4 class="margin-zero link-txt-font">Certidão da SEFAZ</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 MarginT3p">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 link-img PaddignT2p PaddignB2p">
-                            <a href="#" target="_blank" class="link-default azul-fonte"><img src="<?= RAIZSITE ?>/imagens/link.png"></a>
-                    </div>
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9 link-txt">
-                        <h4 class="margin-zero link-txt-font">Certidão da SEFAZ</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 MarginT3p">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 link-img PaddignT2p PaddignB2p">
-                            <a href="#" target="_blank" class="link-default azul-fonte"><img src="<?= RAIZSITE ?>/imagens/link.png"></a>
-                    </div>
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9 link-txt">
-                        <h4 class="margin-zero link-txt-font">Certidão da SEFAZ</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 MarginT3p">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 link-img PaddignT2p PaddignB2p">
-                            <a href="#" target="_blank" class="link-default azul-fonte"><img src="<?= RAIZSITE ?>/imagens/link.png"></a>
-                    </div>
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9 link-txt">
-                        <h4 class="margin-zero link-txt-font">Certidão da SEFAZ</h4>
-                    </div>
-                </div>
+                <?php 
+                    foreach($links as $link){
+                        ?>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 MarginT3p">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 link-img PaddignT2p PaddignB2p">
+                                    <a href="<?= $link->caminho ?>" target="_blank" class="link-default azul-fonte"><img src="<?= RAIZSITE ?>/imagens/link.png"></a>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9 link-txt">
+                                    <h4 class="margin-zero link-txt-font"><?= $link->nome ?></h4>
+                                </div>
+                            </div>
+                        <?php
+                    }
+                ?>
             </div>
         </div>
     </div>

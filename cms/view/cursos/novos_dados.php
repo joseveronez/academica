@@ -22,7 +22,7 @@
                                 <select type="text" class="form-control" name="tipo" maxlength="1" required >
                                     <option disabled selected>Selecione uma opção</option>
                                     <option value="1">Online</option>
-                                    <option value="2">Offline</option>
+                                    <option value="2">Presencial</option>
                                 </select>
                             </div>
                         </div><br>
